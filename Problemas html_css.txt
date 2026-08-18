@@ -1,0 +1,637 @@
+Problemas 
+Problema 1: Link Quebrado 
+Um aluno criou o seguinte código: 
+<a hreff="https://www.google.com">Pesquisar</a> Perguntas: 
+1.	Por que o link não funciona? 
+Link Quebrado. O erro é o hreff (atributo inexistente). 
+2.	Qual atributo está incorreto? 
+<a href="">
+3.	Reescreva o código corretamente. 
+<a href="https://www.google.com">Pesquisar</a>
+
+Problema 2: Imagem Não Aparece 
+Observe o código: 
+<img src="foto_perfil.j A imagem não é exibida. 
+Perguntas: 
+1.	O que pode estar causando o problema? 
+O problema é o atributo src mal fechado: src="foto_perfil.j não tem aspas de fechamento nem extensão completa, então o navegador não encontra o arquivo.
+2.	Qual a função do atributo src?
+O src serve para localizar o arquivo da imagem.Acrescente um atributo alt adequado
+<img src="foto_perfil.jpeg" alt="Foto de perfil">
+Problema 3: Formulário Incompleto 
+<label>Nome:</label> 
+<input type="text"> Perguntas: 
+1.	O código funciona? 
+não
+2.	O que falta para associar corretamente o label ao input? 
+O correto é usar for no <label> apontando para o id do <input> 
+3.	Corrija o código. 
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome">
+
+Problema 4: Erro de CSS h1 color: blue; 
+font-size: 20px; 
+Perguntas: 
+1.	O que está errado? 
+Faltam as chaves {} 
+2.	Reescreva a sintaxe corretamente. 
+h1 {
+color: blue; 
+font-size: 20px; 
+}
+Missões 
+Missão 1: Meu Primeiro Perfil 
+Crie uma página HTML contendo: 
+●	Um título com seu nome 
+●	Uma foto usando <img> 
+●	Um parágrafo se apresentando 
+●	Um link para seu site favorito
+
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Perfil</title>
+</head>
+<body>
+  <h1>Seu Nome Aqui</h1>
+  <img src="foto.jpg" alt="Minha foto">
+  <p>Olá! Meu nome é [seu nome] e esta é a minha primeira página.</p>
+  <a href="https://www.google.com">Meu site favorito</a>
+</body>
+</html>
+  
+Missão 2: Cadastro Simples 
+Crie um formulário com: 
+●	Campo Nome 
+●	Campo Sobrenome 
+●	Botão Enviar 
+Utilize as tags <form>, <label> e <input>.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+</head>
+<body>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br><br>
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" name="sobrenome">
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html> 
+  
+Missão 3: Linguagem Favorita 
+Crie um formulário onde o usuário escolha entre: 
+●	HTML 
+●	CSS 
+●	JavaScript 
+Utilize botões de rádio (radio). 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Linguagem Favorita</title>
+</head>
+<body>
+  <form>
+    <p>Qual sua linguagem favorita?</p>
+    <label><input type="radio" name="linguagem" value="html"> HTML</label><br>
+    <label><input type="radio" name="linguagem" value="css"> CSS</label><br>
+    <label><input type="radio" name="linguagem" value="js"> JavaScript</label>
+  </form>
+</body>
+</html>
+  
+Missão 4: Pesquisa de Equipamentos 
+Monte um formulário usando checkbox para marcar: 
+●	Notebook 
+●	Smartphone 
+●	Tablet 
+●	Computador 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Equipamentos</title>
+</head>
+<body>
+  <form>
+    <p>Quais equipamentos você tem?</p>
+    <label><input type="checkbox" name="equipamento" value="notebook"> Notebook</label><br>
+    <label><input type="checkbox" name="equipamento" value="smartphone"> Smartphone</label><br>
+    <label><input type="checkbox" name="equipamento" value="tablet"> Tablet</label><br>
+    <label><input type="checkbox" name="equipamento" value="computador"> Computador</label>
+  </form>
+</body>
+</html>
+  
+Missão 5: Escolha sua Cor 
+Crie um menu suspenso (select) com as opções: 
+●	Vermelho 
+●	Azul 
+●	Verde 
+●	Amarelo
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha sua Cor</title>
+</head>
+<body>
+  <form>
+    <label for="cor">Escolha sua cor:</label>
+    <select id="cor" name="cor">
+      <option value="vermelho">Vermelho</option>
+      <option value="azul">Azul</option>
+      <option value="verde">Verde</option>
+      <option value="amarelo">Amarelo</option>
+    </select>
+  </form>
+</body>
+</html> 
+  
+Desafios 
+Desafio 1: Página Completa 
+Crie uma página contendo: 
+●	Título principal (h1) 
+●	Imagem 
+●	Texto de apresentação 
+●	Formulário com nome e e-mail 
+●	Botão de envio 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+</head>
+<body>
+  <h1>Bem-vindo à Minha Página</h1>
+  <img src="imagem.jpg" alt="Imagem da página">
+  <p>Este é o meu texto de apresentação. Estou aprendendo HTML e CSS!</p>
+
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+  
+Desafio 2: Aplicando CSS 
+Estilize a página anterior com: 
+●	Título azul 
+●	Texto centralizado 
+●	Cor de fundo clara 
+●	Fonte Arial 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página Estilizada</title>
+  <style>
+    body {
+      background-color: #f0f8ff;  /* cor de fundo clara */
+      font-family: Arial, sans-serif;  /* fonte Arial */
+      text-align: center;  /* texto centralizado */
+    }
+    h1 {
+      color: blue;  /* título azul */
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo à Minha Página</h1>
+  <img src="imagem.jpg" alt="Imagem da página">
+  <p>Este é o meu texto de apresentação. Estou aprendendo HTML e CSS!</p>
+
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+  
+Desafio 3: Classe e ID 
+Crie: 
+●	Um parágrafo usando uma classe chamada .destaque 
+●	Um título usando um id chamado #titulo 
+Aplique estilos diferentes para cada um.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classe e ID</title>
+  <style>
+    /* Seletor de classe: aplicado com . */
+    .destaque {
+      color: white;
+      background-color: orange;
+      padding: 10px;
+      font-weight: bold;
+    }
+    /* Seletor de id: aplicado com # */
+    #titulo {
+      color: darkblue;
+      text-align: center;
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo">Meu Título Principal</h1>
+  <p class="destaque">Este parágrafo usa a classe "destaque".</p>
+</body>
+</html> 
+  
+Desafio 4: Formulário Completo 
+Monte um formulário com: 
+●	Nome 
+●	Sobrenome 
+●	Sexo (radio) 
+●	Possui veículo? (checkbox) 
+●	Cor favorita (select) 
+●	Botão enviar 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Completo</title>
+</head>
+<body>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br><br>
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" name="sobrenome">
+    <br><br>
+
+    <p>Sexo:</p>
+    <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+    <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+
+    <p>Possui veículo?</p>
+    <label><input type="checkbox" name="veiculo" value="sim"> Sim</label>
+
+    <p>Cor favorita:</p>
+    <select name="cor">
+      <option value="vermelho">Vermelho</option>
+      <option value="azul">Azul</option>
+      <option value="verde">Verde</option>
+      <option value="amarelo">Amarelo</option>
+    </select>
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+  
+Desafio Mestre 
+Desenvolva uma página chamada "Meu Portfólio" contendo: 
+1.	Nome do aluno. 
+2.	Foto. 
+3.	Descrição pessoal. 
+4.	Links para redes sociais. 
+5.	Formulário de contato. 
+6.	CSS com: 
+○ Classe para os textos. 
+○ ID para o título principal. 
+○ Cores personalizadas. 
+○ Centralização dos elementos.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Portfólio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+    }
+    /* ID para o título principal */
+    #titulo-principal {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-top: 40px;
+    }
+    /* Classe para os textos */
+    .texto {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .foto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .links a {
+      margin: 0 15px;
+      color: #2980b9;
+      text-decoration: none;
+    }
+    form {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="titulo-principal">Seu Nome</h1>
+  <img class="foto" src="foto.jpg" alt="Foto do portfólio">
+  <p class="texto">Descrição pessoal: sou apaixonado por tecnologia e estou aprendendo desenvolvimento web.</p>
+
+  <h2>Redes Sociais</h2>
+  <div class="links">
+    <a href="https://instagram.com">Instagram</a>
+    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="https://github.com">GitHub</a>
+  </div>
+
+  <h2>Contato</h2>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem"></textarea>
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html> 
+ 
+Desafio 6: Pesquisa de Preferências 
+Crie um formulário que pergunte: 
+1.	Nome do usuário. 
+2.	Qual linguagem web prefere? 
+○	HTML 
+○ CSS 
+○ JavaScript 
+3.	Quais recursos já utilizou? 
+○	Links 
+○ Imagens 
+○ Formulários 
+○ CSS 
+4.	Cor favorita (select). 
+5.	Botão Enviar. 
+Utilize: 
+●	<form> 
+●	<label> 
+●	<input> 
+●	<radio> 
+●	<checkbox> 
+●	<select>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Preferências</title>
+</head>
+<body>
+  <form>
+    <label for="nome">Nome do usuário:</label>
+    <input type="text" id="nome" name="nome">
+    <br><br>
+
+    <p>Qual linguagem web prefere?</p>
+    <label><input type="radio" name="linguagem" value="html"> HTML</label><br>
+    <label><input type="radio" name="linguagem" value="css"> CSS</label><br>
+    <label><input type="radio" name="linguagem" value="js"> JavaScript</label>
+
+    <p>Quais recursos já utilizou?</p>
+    <label><input type="checkbox" name="recurso" value="links"> Links</label><br>
+    <label><input type="checkbox" name="recurso" value="imagens"> Imagens</label><br>
+    <label><input type="checkbox" name="recurso" value="formularios"> Formulários</label><br>
+    <label><input type="checkbox" name="recurso" value="css"> CSS</label>
+
+    <p>Cor favorita:</p>
+    <select name="cor">
+      <option value="vermelho">Vermelho</option>
+      <option value="azul">Azul</option>
+      <option value="verde">Verde</option>
+      <option value="amarelo">Amarelo</option>
+    </select>
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html> 
+ 
+Desafio 7: Página "Quem Sou Eu?" 
+Crie uma página completa contendo: 
+Parte HTML 
+●	Título principal. 
+●	Foto. 
+●	Texto de apresentação. 
+●	Lista com 3 hobbies. 
+●	Link para uma rede social. 
+Parte CSS 
+●	Um seletor por elemento (h1). 
+●	Um seletor por classe (.texto). 
+●	Um seletor por id (#principal). 
+●	Alteração de: 
+○ Cor 
+○ Tamanho da fonte 
+○ Alinhamento 
+Bônus Mestre 
+Adicione comentários em HTML e CSS explicando cada parte do código.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quem Sou Eu?</title>
+  <style>
+    /* Seletor por ELEMENTO: estiliza todos os h1 da página */
+    h1 {
+      color: #1a5276;
+      text-align: center;
+    }
+    /* Seletor por CLASSE: aplicado com .texto */
+    .texto {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+    /* Seletor por ID: aplicado com #principal */
+    #principal {
+      background-color: #eaf2f8;
+      padding: 25px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Comentário HTML: bloco principal com título, foto e apresentação -->
+  <div id="principal">
+    <h1>Quem Sou Eu?</h1>
+    <img src="foto.jpg" alt="Minha foto">
+    <p class="texto">Olá! Meu nome é [seu nome] e adoro aprender coisas novas.</p>
+
+    <h2>Meus Hobbies</h2>
+    <!-- Comentário HTML: lista com 3 hobbies -->
+    <ul>
+      <li>Ler livros</li>
+      <li>Jogar futebol</li>
+      <li>Programar</li>
+    </ul>
+
+    <!-- Comentário HTML: link para rede social -->
+    <p><a href="https://instagram.com">Meu Instagram</a></p>
+  </div>
+</body>
+</html> 
+ 
+Desafio Final da Aula 
+Construa uma página de currículo digital com: 
+●	Foto; 
+●	Nome completo; 
+●	Formação; 
+●	Habilidades; 
+●	Formulário de contato; 
+●	Links para redes sociais; 
+●	Estilização CSS utilizando ID, Classe e Seletor de Elemento. 
+Objetivo: reunir todos os conceitos vistos na aula em um único projeto. 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo Digital</title>
+  <style>
+    /* Seletor por ELEMENTO: estiliza o corpo da página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Seletor por ID: estiliza o card principal do currículo */
+    #curriculo {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Seletor por CLASSE: foto de perfil */
+    .foto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+    }
+
+    /* Seletor por CLASSE: título do currículo */
+    .titulo {
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    /* Seletor por CLASSE: lista de habilidades */
+    .habilidades {
+      list-style: none;
+      padding: 0;
+    }
+    .habilidades li {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 6px 15px;
+      border-radius: 20px;
+      margin: 5px;
+    }
+
+    /* Seletor por CLASSE: links das redes sociais */
+    .links a {
+      margin: 0 12px;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="curriculo">
+    <!-- Foto -->
+    <img class="foto" src="foto.jpg" alt="Foto de perfil">
+
+    <!-- Nome completo -->
+    <h1 class="titulo">Seu Nome Completo</h1>
+
+    <!-- Formação -->
+    <h2>Formação</h2>
+    <p>Ensino Médio Completo — Curso de Desenvolvimento Web</p>
+
+    <!-- Habilidades -->
+    <h2>Habilidades</h2>
+    <ul class="habilidades">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <!-- Redes sociais -->
+    <h2>Redes Sociais</h2>
+    <div class="links">
+      <a href="https://linkedin.com">LinkedIn</a>
+      <a href="https://github.com">GitHub</a>
+      <a href="https://instagram.com">Instagram</a>
+    </div>
+
+    <!-- Formulário de contato -->
+    <h2>Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+      <br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+      <br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
