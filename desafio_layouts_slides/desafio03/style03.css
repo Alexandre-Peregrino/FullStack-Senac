@@ -79,7 +79,7 @@ body{
 .quadrado {
     width: 250px;
     height: 250px;
-    background-color: rgb(218, 221, 219);
+    background-color: #DEE0DF;
 }
 
 .barras {
@@ -91,5 +91,5 @@ body{
 
 .barra {
     height: 20px;
-    background-color: #c9cdcb;
+    background-color: #dee0df;
 }
