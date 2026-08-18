@@ -1,0 +1,64 @@
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;              /* espaço entre seta e imagem */
+  width: 100%;
+  background-color: #333;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.slide-area {
+  display: flex;
+  justify-content: center;
+  /* REMOVA o flex: 1 — era ele que empurrava as setas para as bordas */
+}
+
+.slide-area img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin-top: 200px;
+}
+#card01, #card02, #card03, #card04{
+    width: 120%;
+    height: auto;
+    display: block;
+}
