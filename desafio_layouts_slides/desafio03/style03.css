@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+
+#barra{
+    background-color: #435359;
+    height: 70px;
+    border-radius: 30px 30px 0 0;
+}
+
+#barra button{
+    width: 20px;
+    height: 20px;          /* igual à largura */
+    border-radius: 50%;    /* deixa redondo */
+    border: none;
+    cursor: pointer;
+    gap: 30px;
+    margin: 20px 0 0 15px;
+}
+
+#b1{background-color: rgb(248, 80, 80);}
+#b2{background-color: rgb(247, 218, 28);}
+#b3{background-color: rgb(6, 190, 6);}
+
+#nav{
+    width: 100%;
+    height: 50px;
+    background-color: #E4E5EA;
+}
+
+#nav button{
+    margin: 15px 0 0 10px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    gap: 5px;
+    padding: 6px;
+}
+
+#input01{
+    width: 620px;
+    margin: 0 0 0 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+}
+
+#input02{
+    width: 150px;
+    margin: 0 0 0 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;   /* disposição horizontal continua igual */
+    align-items: flex-start;         /* alinha o topo de cada coluna */
+    margin-top: 200px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;          /* quadrado em cima, barras embaixo */
+    align-items: center;             /* centraliza as barras sob o quadrado */
+    gap: 20px;                       /* espaço entre o quadrado e as barras */
+}
+
+.quadrado {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(218, 221, 219);
+}
+
+.barras {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;                    /* mesma largura do quadrado */
+}
+
+.barra {
+    height: 20px;
+    background-color: #c9cdcb;
+}
