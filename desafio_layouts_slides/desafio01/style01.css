@@ -7,8 +7,9 @@ body{
 #nav {
   position: relative;   /* referência para posicionar os filhos */
   width: 100%;
-  height: 500px;        /* defina a altura que quiser */
+  height: 300px;        /* defina a altura que quiser */
   overflow: hidden;     /* corta o que passar da div */
+  box-shadow: 0 0 40px 0;
 }
 
 #nav img {
@@ -16,10 +17,10 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;    /* preenche a div toda sem distorcer */
   z-index: 0;           /* fica atrás */
-  box-shadow: 0 0 30px 0;
+  box-shadow: 0 0 40px 0;
 }
 
 #nav nav {
@@ -42,7 +43,7 @@ body{
 }
 h1 {
   text-align: center;
-  margin-top: -200px;        /* puxa o h1 para cima, sobrepondo parte da nav */
+  margin-top: 50px;        /* puxa o h1 para cima, sobrepondo parte da nav */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 p {
@@ -55,21 +56,53 @@ p {
     margin-top: -50px;
 }
 .cards {
-  display: flex;
-  padding: 0;              /* cards colados nas bordas */
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
 }
 
 .cards div {
-  flex: 1;
-  min-height: 150px;       /* altura maior — ajuste o valor */
-  padding: 20px;
-  text-align: center;
+    flex: 1;
+    min-height: 150px;
+    padding: 20px;
+    text-align: center;
 }
 
-#card1 { 
-    background-color: #f1c40f; 
-    border-radius: 10px 0 0 10px;
+/* Layout comum aos 3 cards */
+#card1, #card2, #card3 {
+    display: flex;
+    align-items: center;       /* imagem centralizada verticalmente, não estica mais */
+    gap: 15px;                 /* espaço entre a imagem e o texto */
+    padding: 20px;             /* respiro interno — imagem não toca nas bordas */
+    overflow: hidden;          /* respeita os cantos arredondados */
+    text-align: left;          /* textos alinhados à esquerda */
+}
 
-}   /* amarelo */
-#card2 { background-color: #3498db; }   /* azul */
-#card3 { background-color: #e74c3c; }   /* vermelho */
+#card1 { background-color: #f1c40f; border-radius: 10px 0 0 10px; }  /* amarelo */
+#card2 { background-color: #3498db; }                                 /* azul */
+#card3 { background-color: #e74c3c; border-radius: 0 10px 10px 0;}                               /* vermelho */
+
+/* Imagem de cada card */
+#card1 img, #card2 img, #card3 img {
+    width: 60px;               /* imagem menor */
+    height: 60px;              /* altura fixa proporcional */
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;        /* opcional: cantos suaves na imagem */
+}
+
+/* Bloco de texto */
+#card1 .texto, #card2 .texto, #card3 .texto {
+    flex: 1;
+}
+
+#card1 .texto h4, #card2 .texto h4, #card3 .texto h4 {
+    margin: 0 0 5px 0;
+    text-align: left;
+}
+
+#card1 .texto p, #card2 .texto p, #card3 .texto p {
+    margin: 0;
+    font-size: 10px;
+    text-align: left;
+}
