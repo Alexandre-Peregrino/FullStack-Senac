@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-color: #ede7e7;
+}
+
+
+#nav {
+  position: relative;   /* referência para posicionar os filhos */
+  width: 100%;
+  height: 500px;        /* defina a altura que quiser */
+  overflow: hidden;     /* corta o que passar da div */
+}
+
+#nav img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;    /* preenche a div toda sem distorcer */
+  z-index: 0;           /* fica atrás */
+  box-shadow: 0 0 30px 0;
+}
+
+#nav nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  color: aliceblue;
+  margin-right: 30px;   /* cria espaço entre os links e a borda direita */
+  padding-right: 30px;  /* alternativa: espaço interno à direita */
+}
+#nav nav a {
+  color: #fff;                 /* texto branco sobre o fundo */
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  gap: 30px;
+}
+h1 {
+  text-align: center;
+  margin-top: -200px;        /* puxa o h1 para cima, sobrepondo parte da nav */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+p {
+  max-width: 500px;
+  text-align: center;
+  margin: 20px auto;   /* centraliza na horizontal + espaço acima */
+}
+#pontinho{
+    font-size: 50px;
+    margin-top: -50px;
+}
+.cards {
+  display: flex;
+  padding: 0;              /* cards colados nas bordas */
+}
+
+.cards div {
+  flex: 1;
+  min-height: 150px;       /* altura maior — ajuste o valor */
+  padding: 20px;
+  text-align: center;
+}
+
+#card1 { 
+    background-color: #f1c40f; 
+    border-radius: 10px 0 0 10px;
+
+}   /* amarelo */
+#card2 { background-color: #3498db; }   /* azul */
+#card3 { background-color: #e74c3c; }   /* vermelho */
