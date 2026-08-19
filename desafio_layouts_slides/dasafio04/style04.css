@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    background-color: #CBDCF6;
+}
+
+.centralizado {
+    display: flex;
+    flex-direction: column;   /* h1 em cima, input embaixo */
+    align-items: center;      /* centraliza horizontalmente */
+    justify-content: center;  /* centraliza verticalmente */
+    min-height: 100vh;        /* ocupa a altura toda da tela */
+}
+
+h1 {
+    font-family: "Product Sans", Arial, sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: -4px;
+    color: #548EE0;
+    margin-bottom: 30px;      /* espaço entre h1 e input */
+}
+
+input {
+    padding: 18px;
+    border-radius: 30px;
+    border: none;
+    width: 500px;
+}
