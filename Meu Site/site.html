@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logoJBFlex.png" type="image/x-icon">
+    
+    <title>Musicas-com</title>
+</head>
+
+<body>
+    <nav class="menu-nav">
+        <img src="imagens/MusicLovers.png" alt="MusicLovers">
+        <ul>
+            <li>Início</li>
+            <li id="sobre">Sobre</li>
+            <li>Galeria</li>
+            <li id="contato">Contato</li>
+        </ul>
+    </nav>
+    <section id="flex">
+        <h1 id="h1-cabecalho">Site destinado aos que amam a música</h1>
+        <div id="meuModal" class="modal">
+            <div class="modal-conteudo">
+                <span id="fecharModal" class="fechar">&times;</span>
+                <h2>Sobre a JobFlex</h2>
+                <p>Este site tem o objetivo de integrar pessoas que
+                    gostam de falar de música. Um comentário,
+                    opinião sobre música, uma música favorita,
+                    história que ficou marcada por alguma música,
+                    compartiçlhar alguma esperiência musical. Qualquer
+                    resenha, desde que tenha música como essência.
+                </p>
+            </div>
+        </div>
+        <table id="table">
+            <tr>
+                <td colspan="3" style="text-align: center; background-color: #eee;">
+                    Instrumentos
+                </td>
+            </tr>
+            <tr>
+                <td><img src="imagens/acordeao.png" alt="Sanfona"></td>
+                <td><img src="imagens/bateria.png" alt="Bateria"></td>
+                <td><img src="imagens/clarinete.png" alt="Clarinete"></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/graves.png" alt="Bass"></td>
+                <td><img src="imagens/icons8-fagote-48.png" alt="Fagote"></td>
+                <td><img src="imagens/icons8-maracas-48.png" alt="Maracas"></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/instrumento-de-guitarra.png" alt="Guitarra"></td>
+                <td><img src="imagens/maracas.png" alt="Maracas"></td>
+                <td><img src="imagens/saxofone.png" alt="Sax"></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/teclado.png" alt="Teclado"></td>
+                <td><img src="imagens/trompete.png" alt="Trompete"></td>
+                <td><img src="imagens/violino.png" alt="Violino"></td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <div id="modalContato" class="modal">
+            <div class="modal-conteudo">
+                <span id="fecharContato" class="fechar">&times;</span>
+                <label for="menssagem">Deixe sua Sugestão ou crítica</label>
+                <textarea id="menssagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <button type="button" id="enviarContato">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
